@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LINK CAMP 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="https://res.cloudinary.com/dr9noeab2/image/upload/v1768753929/ieee_link-removebg-preview_d31stj.png"
+                    alt="IEEE Link Logo" class="logo">
+            </a>
+        </div>
+        <div class="contact-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#about-us" class="nav-link">About Us</a>
+            <a href="contact.html" class="btn-contact">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="contact-page-main">
+        <div class="contact-wrapper">
+            <!-- Contact Info Box -->
+            <div class="contact-info-box">
+                <h2>Contact Us</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Pulimoodu,<br>Thiruvananthapuram,<br>Kerala, India</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 0471 247 3515</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>team@ieee-link.org</p>
+                </div>
+            </div>
+
+            <!-- Contact Form Container -->
+            <div class="contact-form-container">
+                <form
+                    action="https://script.google.com/macros/s/AKfycbyYNxVxGLzOi8bkr_ol-96tJxyyDdwaqKGgSED9wENnX6xemr0jKw6Qovjm-zCx1vbQ/exec"
+                    method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>IEEE Link</h3>
+                <p>LINK (Local Integrated Network of Kerala IEEE Students) is an innovative concept aimed at networking
+                    student branches in an effective way, thereby increasing the value in IEEE Student membership.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Pulimoodu,<br>Thiruvananthapuram,<br>Kerala, India</p>
+                <p><strong>Phone:</strong> +91 0471 247 3515</p>
+                <p><strong>Email:</strong> team@ieee-link.org</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <p>&copy; 2026 IEEE Link. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a
+                        href="https://www.instagram.com/ieeelink?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/ieeelink/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/share/1Ent2kQXkd/"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Success Popup (Modal) -->
+    <div class="popup-overlay" id="successPopup">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="popup-title">Message Sent!</h3>
+            <p class="popup-message">Thank you for contacting us. We will get back to you shortly.</p>
+            <button class="popup-btn-close" id="closePopupBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- Link to external JS -->
+    <script src="contact.js"></script>
+</body>
+
+</html>
