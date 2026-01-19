@@ -1,49 +1,38 @@
-# IEEE Link Camp 2025 Website
+# IEEE LINK CAMP 2025 Website
 
-This is the official website for the IEEE Link Camp 2025, featuring event details, affinity group showcases, and a contact form integrated with Google Sheets.
+![IEEE Link Logo](https://res.cloudinary.com/dr9noeab2/image/upload/v1768753927/ieee_link_dkyee6.png)
 
-## Features
+This repository contains the source code for the official website of **IEEE LINK CAMP 2025**. The site acts as the central hub for the "Call for Student Leadership Team 2026," offering event details, role descriptions, and a gateway for applications.
 
--   **Responsive Design**: Optimized for Desktop, Tablet, and Mobile.
--   **Contact Us Form**: Connects directly to a Google Sheet using Google Apps Script.
--   **Success Popup**: Custom styled popup modal upon successful form submission.
--   **Smooth Navigation**: Internal anchor links with smooth scrolling.
--   **Affinity Group Showcase**: Grid layout for IEEE affinity group logos.
--   **Social Media Links**: Integrated social media icons in the footer.
+## 📌 Project Overview
 
-## Project Structure
+**LINK (Local Integrated Network of Kerala IEEE Students)** is an innovative concept aimed at networking student branches effectively within the IEEE Kerala Section.
 
--   `index.html`: The main landing page.
--   `contact.html`: The contact us page with the form.
--   `style.css`: Main stylesheet for all pages.
--   `contact.js`: Handles form submission logic and popup interaction.
--   `google_script_code.gs`: The Google Apps Script code (server-side) for handling form data.
--   `script.js`: (Legacy/Other) script file.
+**Key Website Features:**
+* **Event Information:** Details for the camp scheduled on **24th January 2026** at Govt Model Engineering College, Kochi.
+* **Role Recruitment:** Sections detailing leadership, technical, and creative roles available for the 2026 term.
+* **Affinity Group Showcase:** Displays logos of participating IEEE Societies, Chapters, and Councils.
+* **Contact Integration:** A functional contact form connected to Google Sheets via Google Apps Script.
 
-## Setup Instructions
+## 🛠️ Tech Stack
 
-### 1. Website Setup
-Simply open `index.html` or `contact.html` in your web browser. No local server is strictly required for the HTML/CSS/JS to work, but using one (like Live Server in VS Code) is recommended.
+The project uses a lightweight, dependency-free technology stack:
 
-### 2. Contact Form Setup (Google Apps Script)
-To make the contact form work, you need to deploy the Google Apps Script:
+* **Frontend:**
+  * **HTML5:** Semantic markup structure.
+  * **CSS3:** Custom styling using CSS Variables (`:root`), Flexbox, and Grid. No external CSS frameworks (like Bootstrap) are used.
+  * **JavaScript:** Vanilla JS handles the form submission logic and success modal (linked as `contact.js`).
+* **Assets:**
+  * **Icons:** Font Awesome 6.0 (via CDN).
+  * **Fonts:** 'Open Sans' and 'Roboto' via Google Fonts.
+* **Backend:**
+  * **Google Apps Script:** Acts as the backend endpoint to receive form data.
 
-1.  Open [Google Apps Script](https://script.google.com/home/start) and create a new project.
-2.  Copy the code from `google_script_code.gs` into the script editor.
-3.  **Important**: Ensure you have a Google Sheet with a tab named **"Responses"** (case-sensitive) linked or accessible by the script. Update the Sheet ID in the script if creating a new sheet.
-4.  **Deploy as Web App**:
-    -   Click **Deploy** > **New deployment**.
-    -   Select type: **Web app**.
-    -   Description: "Contact Form v1".
-    -   Execute as: **Me**.
-    -   Who has access: **Anyone** (This is critical for the form to work without login).
-5.  Copy the generated **Web App URL**.
-6.  Open `contact.js` and paste the URL into the `SCRIPT_URL` constant variable at the top.
+## 📂 Project Structure
 
-## Troubleshooting
-
--   **Form not submitting?**
-    -   Check the browser console (F12 > Console) for errors.
-    -   Ensure the Google Sheet tab is named exactly "Responses".
-    -   Verify the `SCRIPT_URL` in `contact.js` is correct.
-    -   Ensure "Who has access" in the deployment settings is set to "Anyone".
+```text
+├── index.html          # Main landing page (Event details, Roles, Selection Process)
+├── contact.html        # Contact page (Form and Google Map location)
+├── style.css           # Global stylesheets, CSS variables, and responsive rules
+├── contact.js          # Script for handling form API requests and popups
+└── README.md           # Project documentation
